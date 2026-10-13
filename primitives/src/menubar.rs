@@ -4,8 +4,8 @@ use dioxus::prelude::*;
 
 use crate::{
     collection::{
-        collection_item, use_collection_provider, use_deferred_collection_focus, use_item,
-        CollectionPlacement, CollectionState,
+        CollectionPlacement, CollectionState, collection_item, use_collection_provider,
+        use_deferred_collection_focus, use_item,
     },
     use_animated_open, use_id_or, use_unique_id,
 };

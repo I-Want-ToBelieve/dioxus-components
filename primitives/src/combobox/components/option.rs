@@ -7,8 +7,8 @@ use crate::{
     collection::{collection_item, use_item},
     listbox::{ListboxContext, ListboxItemIndicator},
     selectable::{
-        pointer_select_cancel, pointer_select_commit, pointer_select_start, use_selectable_option,
-        RcPartialEqValue, SelectableOptionConfig,
+        RcPartialEqValue, SelectableOptionConfig, pointer_select_cancel, pointer_select_commit,
+        pointer_select_start, use_selectable_option,
     },
 };
 

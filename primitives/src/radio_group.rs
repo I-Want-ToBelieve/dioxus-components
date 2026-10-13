@@ -4,7 +4,7 @@ use std::collections::HashMap;
 
 use crate::{
     collection::{
-        collection_item, use_collection_provider_with, use_item, CollectionOptions, CollectionState,
+        CollectionOptions, CollectionState, collection_item, use_collection_provider_with, use_item,
     },
     use_controlled, use_effect_with_cleanup,
 };

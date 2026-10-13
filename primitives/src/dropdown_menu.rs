@@ -3,7 +3,7 @@
 use std::rc::Rc;
 
 use crate::{
-    collection::{collection_item, use_collection_provider, use_item, CollectionState},
+    collection::{CollectionState, collection_item, use_collection_provider, use_item},
     merge_attributes, use_animated_open, use_controlled, use_id_or, use_unique_id,
 };
 use dioxus::prelude::*;

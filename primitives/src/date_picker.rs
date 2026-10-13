@@ -1,19 +1,20 @@
 //! Defines the [`DatePicker`] and [`DateRangePicker`] components and its subcomponents, which allowing users to enter or select a date value
 
 use crate::{
+    LocalDateExt as _,
     calendar::{
-        weekday_abbreviation, AvailableRanges, CalendarProps, DateRange, RangeCalendarProps,
+        AvailableRanges, CalendarProps, DateRange, RangeCalendarProps, weekday_abbreviation,
     },
-    collection::{collection_item, use_collection_provider, use_item, CollectionState},
+    collection::{CollectionState, collection_item, use_collection_provider, use_item},
     dioxus_core::Properties,
     popover::*,
-    use_unique_id, LocalDateExt as _,
+    use_unique_id,
 };
 
 use dioxus::prelude::*;
 use num_integer::Integer;
 use std::{fmt::Display, str::FromStr};
-use time::{macros::date, Date, Month, OffsetDateTime, Weekday};
+use time::{Date, Month, OffsetDateTime, Weekday, macros::date};
 
 /// The context provided by the [`DatePicker`] component to its children.
 #[derive(Copy, Clone)]

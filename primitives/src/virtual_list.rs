@@ -6,8 +6,8 @@ use dioxus::prelude::*;
 use serde::Deserialize;
 
 use crate::r#virtual::{
-    compute_measurements, get_total_size, get_virtual_items, resize_item, set_scroll_offset,
-    set_viewport_size, VirtualizerState, VirtualizerStateStoreExt,
+    VirtualizerState, VirtualizerStateStoreExt, compute_measurements, get_total_size,
+    get_virtual_items, resize_item, set_scroll_offset, set_viewport_size,
 };
 
 /// The props for the [`VirtualList`] component.

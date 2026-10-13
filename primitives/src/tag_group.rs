@@ -3,9 +3,9 @@
 use dioxus::prelude::*;
 
 use crate::{
-    collection::{collection_item, use_collection_provider, use_item, CollectionState},
+    collection::{CollectionState, collection_item, use_collection_provider, use_item},
     selectable::SelectionMode,
-    selection::{option_text_value, RcPartialEqValue},
+    selection::{RcPartialEqValue, option_text_value},
     use_controlled, use_effect_cleanup, use_effect_with_cleanup, use_id_or, use_unique_id,
 };
 

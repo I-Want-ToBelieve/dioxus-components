@@ -2,11 +2,10 @@
 
 use dioxus_rsx::{Attribute, ElementName};
 use proc_macro2::TokenStream as TokenStream2;
-use quote::{quote, ToTokens};
+use quote::{ToTokens, quote};
 use syn::{
-    braced,
+    Expr, Ident, Token, braced,
     parse::{Parse, ParseStream},
-    Expr, Ident, Token,
 };
 
 /// A parsed list of attributes from the `attributes!` macro

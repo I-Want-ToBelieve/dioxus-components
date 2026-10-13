@@ -1,7 +1,7 @@
 //! Defines the [`HoverCard`] component and its subcomponents.
 
 use crate::{
-    use_animated_open, use_controlled, use_id_or, use_unique_id, ContentAlign, ContentSide,
+    ContentAlign, ContentSide, use_animated_open, use_controlled, use_id_or, use_unique_id,
 };
 use dioxus::prelude::*;
 

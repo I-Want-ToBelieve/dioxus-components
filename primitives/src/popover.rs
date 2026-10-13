@@ -4,8 +4,8 @@ use dioxus::document;
 use dioxus::prelude::*;
 
 use crate::{
-    use_animated_open, use_controlled, use_global_escape_listener, use_id_or, use_outside_dismiss,
-    use_unique_id, ContentAlign, ContentSide, FOCUS_TRAP_JS,
+    ContentAlign, ContentSide, FOCUS_TRAP_JS, use_animated_open, use_controlled,
+    use_global_escape_listener, use_id_or, use_outside_dismiss, use_unique_id,
 };
 
 #[derive(Clone, Copy)]

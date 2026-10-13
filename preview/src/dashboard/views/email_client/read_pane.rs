@@ -1,7 +1,7 @@
 use dioxus::prelude::*;
 use dioxus_icons::lucide::{Check, ChevronDown};
 use dioxus_primitives::select as primitive_select;
-use dioxus_primitives::toast::{use_toast, ToastOptions};
+use dioxus_primitives::toast::{ToastOptions, use_toast};
 use std::rc::Rc;
 
 use crate::components::avatar::{AvatarImageSize, AvatarShape, ImageAvatar};
@@ -13,8 +13,8 @@ use crate::components::toolbar::component::{
     Toolbar, ToolbarButton, ToolbarGroup, ToolbarSeparator,
 };
 use crate::dashboard::common::{
-    lookup_message, IconKind, LucideIcon, MessageState, MessageStateStoreExt, MessageTag,
-    AVATAR_PROFILE_OPTIONS, LOREM_IPSUM,
+    AVATAR_PROFILE_OPTIONS, IconKind, LOREM_IPSUM, LucideIcon, MessageState, MessageStateStoreExt,
+    MessageTag, lookup_message,
 };
 
 use super::avatars::avatar_profile_for_key;

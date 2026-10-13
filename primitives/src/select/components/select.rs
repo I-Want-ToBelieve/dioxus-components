@@ -4,10 +4,11 @@ use core::panic;
 use std::time::Duration;
 
 use crate::{
+    Controlled,
     selectable::{
-        use_selectable_root, use_single_selectable_value, RcPartialEqValue, SelectionMode,
+        RcPartialEqValue, SelectionMode, use_selectable_root, use_single_selectable_value,
     },
-    use_controlled, use_effect, Controlled,
+    use_controlled, use_effect,
 };
 use dioxus::prelude::*;
 use dioxus_core::Task;

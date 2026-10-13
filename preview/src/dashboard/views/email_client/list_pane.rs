@@ -10,8 +10,8 @@ use crate::components::item::{
 use crate::components::tabs::component::{TabList, TabTrigger, Tabs};
 use crate::components::virtual_list::VirtualList;
 use crate::dashboard::common::{
-    lookup_message, IconKind, LucideIcon, MessageState, MessageStateStoreExt, MessageTag, TabId,
-    LOREM_IPSUM, TABS,
+    IconKind, LOREM_IPSUM, LucideIcon, MessageState, MessageStateStoreExt, MessageTag, TABS, TabId,
+    lookup_message,
 };
 
 use super::avatars::avatar_profile_for_key;

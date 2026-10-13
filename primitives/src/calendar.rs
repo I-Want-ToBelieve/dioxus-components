@@ -1,7 +1,7 @@
 //! Defines the [`Calendar`] component and its sub-components, which provide a calendar interface with date selection and navigation.
 
 use dioxus::{
-    core::{current_scope_id, ScopeId},
+    core::{ScopeId, current_scope_id},
     prelude::*,
 };
 use std::{
@@ -10,9 +10,9 @@ use std::{
     rc::Rc,
 };
 
-use time::{ext::NumericalDuration, macros::date, Date, Month, OffsetDateTime, Weekday};
+use time::{Date, Month, OffsetDateTime, Weekday, ext::NumericalDuration, macros::date};
 
-use crate::{date_picker::DefaultCalendarProps, use_effect_cleanup, LocalDateExt as _};
+use crate::{LocalDateExt as _, date_picker::DefaultCalendarProps, use_effect_cleanup};
 
 // A collection of [`Weekday`]s stored as a single byte
 // Implemented as a bitmask where bits 1-7 correspond to Monday-Sunday
@@ -112,11 +112,7 @@ pub(crate) fn weekday_abbreviation(weekday: Weekday) -> &'static str {
 fn days_since(date: Date, weekday: Weekday) -> i64 {
     let lhs = date.replace_day(1).unwrap().weekday() as i64;
     let rhs = weekday as i64;
-    if lhs < rhs {
-        7 + lhs - rhs
-    } else {
-        lhs - rhs
-    }
+    if lhs < rhs { 7 + lhs - rhs } else { lhs - rhs }
 }
 
 fn next_month(date: Date) -> Option<Date> {

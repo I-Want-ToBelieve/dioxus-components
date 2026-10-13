@@ -1,7 +1,7 @@
 //! Defines the [`Tabs`] component and its sub-components.
 
 use crate::{
-    collection::{collection_item, use_collection_provider, use_item, CollectionState},
+    collection::{CollectionState, collection_item, use_collection_provider, use_item},
     use_controlled, use_id_or, use_unique_id,
 };
 use dioxus::prelude::*;

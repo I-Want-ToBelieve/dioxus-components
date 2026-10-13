@@ -1,8 +1,8 @@
 use crate::pointer;
-use dioxus::html::geometry::euclid::Rect;
-use dioxus::html::geometry::euclid::Vector2D;
 use dioxus::html::geometry::ClientPoint;
 use dioxus::html::geometry::Pixels;
+use dioxus::html::geometry::euclid::Rect;
+use dioxus::html::geometry::euclid::Vector2D;
 use dioxus::html::input_data::MouseButton;
 use dioxus::prelude::*;
 use std::rc::Rc;

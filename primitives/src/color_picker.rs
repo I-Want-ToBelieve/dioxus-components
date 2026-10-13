@@ -1,11 +1,11 @@
 //! Defines the [`ColorPicker`] component and its sub-components.
 
 use crate::dioxus_elements::geometry::ClientPoint;
-use crate::move_interaction::{use_move_interaction, MoveEvent};
-use dioxus::html::geometry::euclid::Size2D;
+use crate::move_interaction::{MoveEvent, use_move_interaction};
 use dioxus::html::geometry::PixelsSize;
+use dioxus::html::geometry::euclid::Size2D;
 use dioxus::prelude::*;
-use palette::{encoding, FromColor, Hsv, RgbHue, Srgb};
+use palette::{FromColor, Hsv, RgbHue, Srgb, encoding};
 
 use std::rc::Rc;
 

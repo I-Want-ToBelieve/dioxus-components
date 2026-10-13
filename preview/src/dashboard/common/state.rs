@@ -1,7 +1,7 @@
 use dioxus::prelude::*;
 
 use super::{
-    folder_override, FolderId, MessageTag, DEFAULT_MESSAGE_FOLDER_ID, EMAIL_REPEAT_COUNT, MESSAGES,
+    DEFAULT_MESSAGE_FOLDER_ID, EMAIL_REPEAT_COUNT, FolderId, MESSAGES, MessageTag, folder_override,
 };
 
 #[derive(Clone, PartialEq, Store)]

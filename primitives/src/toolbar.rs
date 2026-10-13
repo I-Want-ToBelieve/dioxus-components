@@ -1,6 +1,6 @@
 //! Defines the [`Toolbar`] component and its sub-components, which provide a container to group related buttons and controls with keyboard navigation.
 
-use crate::collection::{collection_item, use_collection_provider, use_item, CollectionState};
+use crate::collection::{CollectionState, collection_item, use_collection_provider, use_item};
 use dioxus::prelude::*;
 
 #[derive(Clone, Copy)]

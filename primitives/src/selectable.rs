@@ -4,9 +4,10 @@ use dioxus::html::input_data::MouseButton;
 use dioxus::prelude::*;
 
 use crate::{
-    collection::{use_collection_provider, CollectionState},
-    listbox::{use_listbox_option, ListboxOptionContext},
-    selection, use_controlled, Controlled,
+    Controlled,
+    collection::{CollectionState, use_collection_provider},
+    listbox::{ListboxOptionContext, use_listbox_option},
+    selection, use_controlled,
 };
 
 pub(crate) use crate::selection::{OptionState, RcPartialEqValue};

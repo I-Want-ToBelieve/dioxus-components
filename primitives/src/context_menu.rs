@@ -1,7 +1,7 @@
 //! Defines the [`ContextMenu`] component and its subcomponents, which provide a context menu interface.
 
 use crate::{
-    collection::{collection_item, use_collection_provider, use_item, CollectionState},
+    collection::{CollectionState, collection_item, use_collection_provider, use_item},
     selectable::{pointer_select_cancel, pointer_select_commit, pointer_select_start},
     use_animated_open, use_controlled, use_effect_with_cleanup, use_id_or, use_outside_dismiss,
     use_unique_id,

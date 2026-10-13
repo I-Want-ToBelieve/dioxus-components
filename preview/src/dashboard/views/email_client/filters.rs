@@ -1,4 +1,4 @@
-use crate::dashboard::common::{lookup_message, FolderId, MessageState, MessageTag, TabId};
+use crate::dashboard::common::{FolderId, MessageState, MessageTag, TabId, lookup_message};
 
 pub(super) fn message_matches_folder(state: &MessageState, folder_id: FolderId) -> bool {
     if state.snoozed {

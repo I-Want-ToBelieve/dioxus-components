@@ -1,18 +1,14 @@
 //! Defines the [`Slider`] and [`RangeSlider`] components and their sub-components, which provide
 //! a range input control for selecting a single value or a value range within a specified range.
 
-use crate::move_interaction::{use_move_interaction, MoveEvent};
+use crate::move_interaction::{MoveEvent, use_move_interaction};
 use crate::use_controlled;
 use dioxus::prelude::*;
 use std::ops::Range;
 use std::rc::Rc;
 
 fn ordered_range(start: f64, end: f64) -> Range<f64> {
-    if start <= end {
-        start..end
-    } else {
-        end..start
-    }
+    if start <= end { start..end } else { end..start }
 }
 
 fn normalize_range(range: Range<f64>) -> Range<f64> {

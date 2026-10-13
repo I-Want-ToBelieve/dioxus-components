@@ -4,7 +4,7 @@ use dioxus::prelude::*;
 
 use crate::{
     selectable::SelectableContext,
-    selection::{option_text_value, remove_option, sync_option, OptionState, RcPartialEqValue},
+    selection::{OptionState, RcPartialEqValue, option_text_value, remove_option, sync_option},
     use_animated_open, use_effect, use_effect_cleanup, use_id_or, use_unique_id,
 };
 

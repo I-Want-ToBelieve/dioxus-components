@@ -2,12 +2,13 @@
 
 use dioxus::prelude::*;
 
-use super::super::context::{default_combobox_filter, ComboboxContext};
+use super::super::context::{ComboboxContext, default_combobox_filter};
 use crate::{
+    Controlled,
     selectable::{
-        use_selectable_root, use_single_selectable_value, RcPartialEqValue, SelectionMode,
+        RcPartialEqValue, SelectionMode, use_selectable_root, use_single_selectable_value,
     },
-    use_controlled, Controlled,
+    use_controlled,
 };
 
 /// Props for [`Combobox`].

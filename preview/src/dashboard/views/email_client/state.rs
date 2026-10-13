@@ -3,7 +3,7 @@ use std::collections::BTreeMap;
 use dioxus::prelude::*;
 
 use crate::dashboard::common::{
-    seed_message_states, FolderId, MessageState, MessageTag, TabId, FOLDERS,
+    FOLDERS, FolderId, MessageState, MessageTag, TabId, seed_message_states,
 };
 
 use super::filters::{message_matches_filters, message_matches_folder};

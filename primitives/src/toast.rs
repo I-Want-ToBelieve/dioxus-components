@@ -1,7 +1,7 @@
 //! Defines the [`Toast`] component and its sub-components, which provide a notification system for displaying temporary messages to users.
 
 use crate::{
-    portal::{use_portal, PortalIn, PortalOut},
+    portal::{PortalIn, PortalOut, use_portal},
     use_global_keydown_listener, use_unique_id,
 };
 use dioxus::prelude::*;

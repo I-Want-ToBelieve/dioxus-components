@@ -21,15 +21,15 @@ use crate::components::{
 };
 use core::panic;
 use dioxus::prelude::{dioxus_router::LinkProps, *};
-use dioxus_code::{advanced::HighlightedSource, Code, CodeTheme, Theme};
-use dioxus_i18n::prelude::{use_init_i18n, I18nConfig};
+use dioxus_code::{Code, CodeTheme, Theme, advanced::HighlightedSource};
+use dioxus_i18n::prelude::{I18nConfig, use_init_i18n};
 use dioxus_icons::lucide::{
     ArrowRight, ArrowUpRight, Check, ChevronDown, ChevronLeft, Copy, ExternalLink, Mail, Menu,
     Pause, Play, SkipBack, SkipForward, X,
 };
 use std::str::FromStr;
 use strum::{Display, EnumIter, EnumString, IntoEnumIterator};
-use unic_langid::{langid, LanguageIdentifier};
+use unic_langid::{LanguageIdentifier, langid};
 
 mod components;
 mod dashboard;
@@ -70,7 +70,7 @@ fn main() {
 
 #[cfg(feature = "server")]
 fn main() {
-    use dioxus::server::axum::{routing::post, Json, Router};
+    use dioxus::server::axum::{Json, Router, routing::post};
     use dioxus::server::{DioxusRouterExt, IncrementalRendererConfig, ServeConfig};
 
     dioxus::server::serve(|| async {
@@ -770,8 +770,7 @@ fn email_client_thumb() -> Element {
 const DEMO_ENTRIES: &[DemoEntry] = &[DemoEntry {
     tag: "Dashboard",
     title: "Email client",
-    description:
-        "Multi-pane mail app composed from the sidebar, item list, reading pane, and compose modal.",
+    description: "Multi-pane mail app composed from the sidebar, item list, reading pane, and compose modal.",
     route: || Route::EmailClientDashboard {
         dark_mode: Route::in_dark_mode(),
     },
@@ -1597,7 +1596,7 @@ fn BlockFilters() -> Element {
 #[component]
 fn BlockColorPalette() -> Element {
     use dioxus_primitives::color_picker::Color;
-    use palette::{encoding, Hsv, IntoColor};
+    use palette::{Hsv, IntoColor, encoding};
 
     let mut color = use_signal(|| -> Hsv<encoding::Srgb, f64> {
         Color::new(124, 58, 237).into_format::<f64>().into_color()

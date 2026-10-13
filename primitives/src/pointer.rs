@@ -1,4 +1,4 @@
-use crate::dioxus_core::{queue_effect, Runtime};
+use crate::dioxus_core::{Runtime, queue_effect};
 use dioxus::html::geometry::ClientPoint;
 use dioxus::prelude::*;
 

@@ -1,8 +1,8 @@
 //! Defines the [`Tooltip`] component and its sub-components, which provide contextual information when hovering or focusing on elements.
 
 use crate::{
-    merge_attributes, use_animated_open, use_controlled, use_id_or, use_unique_id, ContentAlign,
-    ContentSide,
+    ContentAlign, ContentSide, merge_attributes, use_animated_open, use_controlled, use_id_or,
+    use_unique_id,
 };
 use dioxus::prelude::*;
 use dioxus_attributes::attributes;

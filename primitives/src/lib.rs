@@ -7,7 +7,7 @@ use std::sync::atomic::{AtomicUsize, Ordering};
 
 use dioxus::core::{current_scope_id, use_drop};
 use dioxus::prelude::*;
-use dioxus::prelude::{asset, manganis, Asset};
+use dioxus::prelude::{Asset, asset, manganis};
 use dioxus_core::AttributeValue::Text;
 use time::OffsetDateTime;
 

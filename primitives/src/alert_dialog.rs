@@ -1,7 +1,7 @@
 //! Defines the [`AlertDialogRoot`] component and its sub-components.
 
 use crate::use_global_escape_listener;
-use crate::{use_animated_open, use_id_or, use_unique_id, FOCUS_TRAP_JS};
+use crate::{FOCUS_TRAP_JS, use_animated_open, use_id_or, use_unique_id};
 use dioxus::document;
 use dioxus::prelude::*;
 

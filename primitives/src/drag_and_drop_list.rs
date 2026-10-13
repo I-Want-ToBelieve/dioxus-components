@@ -1,5 +1,5 @@
 //! Defines the [`DragAndDropList`] component and its sub-components.
-use crate::collection::{collection_item, use_collection_provider, use_item, CollectionState};
+use crate::collection::{CollectionState, collection_item, use_collection_provider, use_item};
 use dioxus::prelude::*;
 
 #[derive(Clone, Copy, PartialEq, Debug)]
@@ -49,11 +49,7 @@ fn resolve_drop_index(from: usize, hovered: usize, position: DropPosition) -> us
         DropPosition::After => hovered + 1,
     };
 
-    if from < slot {
-        slot - 1
-    } else {
-        slot
-    }
+    if from < slot { slot - 1 } else { slot }
 }
 
 /// Resolves whether the final insertion index is before or after the source item.

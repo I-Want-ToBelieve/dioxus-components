@@ -1,5 +1,5 @@
 use dioxus::prelude::*;
-use dioxus_primitives::toast::{use_toast, ToastOptions};
+use dioxus_primitives::toast::{ToastOptions, use_toast};
 
 use crate::components::button::{Button, ButtonVariant};
 use crate::components::dialog::{Dialog, DialogDescription, DialogTitle};

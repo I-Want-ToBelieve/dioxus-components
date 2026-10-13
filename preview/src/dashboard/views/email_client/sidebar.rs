@@ -6,7 +6,7 @@ use crate::components::sidebar::{
     SidebarMenu, SidebarMenuBadge, SidebarMenuButton, SidebarMenuButtonSize, SidebarMenuItem,
     SidebarRail, SidebarVariant,
 };
-use crate::dashboard::common::{FolderId, IconKind, LucideIcon, AVATAR_PROFILE_OPTIONS, FOLDERS};
+use crate::dashboard::common::{AVATAR_PROFILE_OPTIONS, FOLDERS, FolderId, IconKind, LucideIcon};
 
 use super::state::{EmailClientState, EmailClientStateStoreExt, EmailClientStateStoreImplExt};
 
